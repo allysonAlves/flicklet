@@ -32,17 +32,17 @@ yarn add flicklet
 
 ---
 
-## 🚀 CLI disponível: `npx flicklet`
+## 🚀 CLI disponível: `npx flick`
 
 Depois de instalar, você poderá usar o CLI diretamente:
 
 ### Comandos disponíveis:
 
-| Comando              | Descrição                                                                                |
-| :------------------- | :--------------------------------------------------------------------------------------- |
-| `npx flicklet init`  | Inicializa um projeto padrão (`index.ts`, `index.html`, `index.scss` e `tsconfig.json`). |
-| `npx flicklet start` | Inicia um servidor de desenvolvimento com Webpack Dev Server.                            |
-| `npx flicklet build` | Realiza o build de produção no diretório `build/`.                                       |
+| Comando           | Descrição                                                                                |
+| :---------------- | :--------------------------------------------------------------------------------------- |
+| `npx flick init`  | Inicializa um projeto padrão (`index.ts`, `index.html`, `index.scss` e `tsconfig.json`). |
+| `npx flick start` | Inicia um servidor de desenvolvimento com Webpack Dev Server.                            |
+| `npx flick build` | Realiza o build de produção no diretório `build/`.                                       |
 
 ---
 
@@ -73,7 +73,7 @@ npx flicklet build
 ### 1. Criando seu app
 
 ```typescript
-import { registerApp } from "flicklet";
+import { registerApp } from "flick";
 
 const app = document.createElement("div");
 registerApp(app);
@@ -82,8 +82,8 @@ registerApp(app);
 ### 2. Criando componentes
 
 ```typescript
-import Container from "flicklet/Container";
-import Label from "flicklet/Label";
+import Container from "flick/Container";
+import Label from "flick/Label";
 
 const MyLabel = () => {
   Label({
@@ -103,7 +103,7 @@ registerApp(App);
 ### 3. Trabalhando com estado reativo
 
 ```typescript
-import { store } from "flicklet";
+import { store } from "flick";
 
 const counter = store.localState(0);
 
