@@ -1,0 +1,16 @@
+{
+    "$schema": "https://json.schemastore.org/tsconfig",
+    "display": "Flick",
+  
+    "compilerOptions": {
+        "allowJs": true,
+        "target": "es6",                
+        "module": "commonjs",           
+        "declaration": false,            
+        "outDir": "./dist",             
+        "strict": true,                 
+        "esModuleInterop": true,        
+        "forceConsistentCasingInFileNames": true,
+        "sourceMap": true,
+    } 
+  }

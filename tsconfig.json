@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "es6",                // Define o alvo de saída para ES6
+    "module": "commonjs",           // Usa CommonJS para compatibilidade com Node
+    "declaration": true,            // Gera arquivos .d.ts para cada arquivo .ts
+    "outDir": "./dist",             // Define a pasta de saída para o código compilado
+    "strict": true,                 // Habilita verificações rigorosas
+    "esModuleInterop": true,        // Permite importações de módulos ES
+    "forceConsistentCasingInFileNames": true, // Mantém consistência no nome dos arquivos
+    "sourceMap": true,
+  },
+  "include": ["src/**/*", "dist/**/*", "src/types/*.d.ts"],           // Inclui a pasta de código-fonte
+  "exclude": ["node_modules", "dist"] // Exclui pastas não necessárias na compilação
+}

@@ -1,0 +1,60 @@
+@use "sass:color";
+
+// Variáveis
+$primary-color: #007bff;
+$shadow-color: rgba(0, 0, 0, 0.1);
+$white: #fff;
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;    
+    width: 100vw;    
+}
+
+// Estilos
+.card {
+    display: flex;
+    flex-direction: column;   
+    align-items: center;
+    padding: 20px;
+    border-radius: 5px;
+    min-width: 300px;
+    min-height: 200px;
+    box-shadow: 0 0 10px 0 $shadow-color;
+    background-color: $white;
+    gap: 5px;
+
+    .title {
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+    }
+}
+
+.inputContainer {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.button-submit {
+    background-color: $primary-color;
+    color: $white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 6px;
+    
+    &:hover {
+        background-color: color.adjust($primary-color, $lightness: -10%);
+        transition: background-color 0.3s ease;
+    }
+}
